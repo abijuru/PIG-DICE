@@ -26,5 +26,8 @@ var Player = function(turn) {
   Player.prototype.addPoints = function(rollPoints) {
     this.scoreTotal += rollPoints;
   };
-
+  var player1 = new Player(true);
+  var player2 = new Player(false);
+  
+  var totalRoll;
 
