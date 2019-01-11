@@ -30,4 +30,21 @@ var Player = function(turn) {
   var player2 = new Player(false);
   
   var totalRoll;
-
+// User Interface Logic
+$(document).ready(function() {
+    var playerOneName;
+    var playerTwoName;
+  
+    totalRoll = parseInt($("#rolled-total").text());
+  
+    $("#signup-form").submit(function(event){
+      event.preventDefault();
+      playerOneName = $("#player-one-signup").val();
+      playerTwoName = $("#player-two-signup").val();
+      $(".player-setup").slideUp(500);
+      $("#player-one-name").text(playerOneName);
+      $("#player-two-name").text(playerTwoName);
+      $("#player-msg").text(playerOneName + ", GO!");
+      $(".game").slideDown(500);
+    }); // end submit
+  
