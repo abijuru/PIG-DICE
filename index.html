@@ -1,45 +1,78 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Source+Sans+Pro" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-1.12.0.js"></script>
-    <script src="js/scripts.js"></script>
-    <title>project</title>
-</head>
-<body>
-    <h1>PIG DICE PROJECT</h1>
-    <div class="wrapper clearfix" >
-            <div class="player-0-panel active-0">
-        <div class="game-panel">
-          <div class="player-name" id="name-0">Player 1</div>
-          <div class="player-score-0" id="score-0">43</div>
-          <div class="player-0-rolled-1"><h3>Sorry! You rolled 1.</h3></div>
-          <div class="player-current-box-0">
-            <div class="player-current-label">Current</div>
-            <div class="player-current-score" id="current-0">11</div>
-          </div>
-          <div class="rules-panel" style="display:none">
-         <h2>WINNER !!!</h2>
-         <p>On a turn, a player rolls the die repeatedly until either:</p>
-         <li>1 is rolled</li>
-         <li>The player chooses to hold (stop rolling)</li>
-         <br>
-         <p>If the player chooses to hold, all of the points rolled during that turn are added to his or her score.</p>
-       <button class="btn-back"><i class="ion-ios-arrow-left color-0"></i>Back to game</button>	
-       </div>
-           </div>
-           <div class="game-panel">
-       
-           <button class="btn-new"><i class="ion-ios-plus-outline icon color-0"></i>New game</button>
-     <button class="btn-rules"><i class="ion-ios-compose-outline icon color-0"></i>Rules</button>
-           <button class="btn-roll"><i class="ion-ios-loop icon color-0"></i>Roll dice</button>
-           <button class="btn-hold"><i class="ion-ios-download-outline icon color-0"></i>Hold</button>
-     <img src="data:image/jpeg;base64,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"> 
-      </div> 
-           </div>
-</body>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <title>Pig Dice Game</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <h3>Pig Dice Game project</h3>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6 game-info">
+          <h4>Pig Dice is a two-person game of chance. During each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold". The other rules are:</h4>
+          <ul>
+            <li>If the player rolls a 1, they score nothing and it becomes the next player's turn.</li>
+            <li>If the player rolls any other number, it is added to their turn total and the player's turn continues.</li>
+            <li>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.</li>
+            <li><strong>The first player to score 100 or more points wins.</strong></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 player-setup">
+          <h3>Player Setup</h3>
+          <form id="signup-form">
+            <div class="form-group">
+              <label for="player-one-signup">Player One</label>
+              <input id="player-one-signup" class="form-control" type="text" placeholder="Enter name">
+            </div>
+            <div class="form-group">
+              <label for="player-two-signup">Player Two</label>
+              <input id="player-two-signup" class="form-control" type="text" placeholder="Enter name">
+            </div>
+            <button class="btn btn-primary" type="submit">Play</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="container game">
+      <div class="row">
+        <div class="col-xs-4">
+          <h3>Player One:</h3>
+          <h4 id="player-one-name"></h4>
+          <p>Score:</p>
+          <p><span class="p1-total-score"></span></p>
+        </div>
+        <div class="col-xs-4">
+          <h3>Rolled Dice</h3>
+          <h1 id="rolled-number">#</h1>
+          <h3>Possible Points</h3>
+          <h1 id="rolled-total">0</h1>
+          <button id="roll" class="btn btn-primary">Roll</button>
+          <button id="hold" class="btn" disabled="true">Hold</button>
+          <br>
+          <br>
+          <p id="player-msg"></p>
+          <p id="player-turn-score"></p>
+        </div>
+
+        <div class="col-xs-4">
+          <h3>Player Two:</h3>
+          <h4 id="player-two-name"></h4>
+          <p>Score:</p>
+          <p><span class="p2-total-score"></span></p>
+        </div>
+      </div>
+    </div>
+
+  </body>
 </html>
