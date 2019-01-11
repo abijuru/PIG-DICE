@@ -5,3 +5,4 @@ This is a two player game of Pig dice. Each turn, a player repeatedly rolls a di
 ## RULES FOLLOWED
 1. The game  begins when a user selects the "Play" button on the web page.
 2. When Player rolls, return a random number between '1' and '6'
+3. If current Player rolls a number between '2' and '6', Player has the option to 'hold' or 'roll' again.
