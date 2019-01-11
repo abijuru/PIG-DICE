@@ -19,5 +19,8 @@ body {
 	.navbar h3 {
 	  font-size: 35px;
 	}
-
+	.col-xs-4 {
+		text-align: center;
+	  }
+	  
 
