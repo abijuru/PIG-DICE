@@ -17,3 +17,11 @@ This is a two player game of Pig dice. Each turn, a player repeatedly rolls a di
 3.JAVASCRIPT
 4.BOOSTRAP
 5.JQUERY
+
+## CONTACT INFORMATION
+
+
+
+
+
+
