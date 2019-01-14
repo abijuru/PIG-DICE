@@ -7,11 +7,13 @@ This is a two player game of Pig dice. Each turn, a player repeatedly rolls a di
 2. When Player rolls, return a random number between '1' and '6'
 3. If current Player rolls a number between '2' and '6', Player has the option to 'hold' or 'roll' again.
 4. The first player to hit greater than or equal to 100 points wins.
+### SETUP INSTRUCTION
+1.TEXT-EDIT
+2.WEB-BROWSER
 
-
-
-
-
-
-
-
+## TECHNOLOGY USED
+1.HTML
+2.CSS
+3.JAVASCRIPT
+4.BOOSTRAP
+5.JQUERY
