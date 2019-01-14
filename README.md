@@ -21,7 +21,7 @@ This is a two player game of Pig dice. Each turn, a player repeatedly rolls a di
 ## CONTACT INFORMATION
 TEL:(250)785434295 :(250)726261174 email:abijuruelis@gmail.com
 
-
+### COPY RIGHT AND LICENCE INFORMATION
 
 
 
