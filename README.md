@@ -22,6 +22,8 @@ This is a two player game of Pig dice. Each turn, a player repeatedly rolls a di
 TEL:(250)785434295 :(250)726261174 email:abijuruelis@gmail.com
 
 ### COPY RIGHT AND LICENCE INFORMATION
+This project is licensed under the MIT License - see the LICENSE.md file for details copyright@2019 by Elisabeth Abijuru . All right reserved
+
 
 
 
